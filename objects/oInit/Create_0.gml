@@ -18,10 +18,17 @@ global.obfuscation_code = string_copy(string(irandom_range(1000000, 10000000)), 
 	맨 처음에 서버에서 받아온 값을 저장하고 그 이후로는 계속 클라이언트 
 	단에서 조작이 이루어집니다. 하지만 정기적으로 서버에서 검증을 해 줄 
 	필요가 있습니다.
+
+	이 값들은 모두 실수가 아닌 문자열로 저장됩니다. 이때 더해질때는 자릿수를 
+	올림해주지않고 그냥 ["12", "26", "3", "0", "72"] 식으로 저장됩니다.
+	이유는 어차피 서버에 저장될 때만 자릿수를 올림해줘도 아무 문제가 없기 
+	때문입니다. 내부적으로는 표기해줄때 사용할 변수가 따로 있습니다.
 */
 global.player_money_purchased = 0 // 사용했던 현금, 숫자로 저장됩니다.
 global.player_cash = ["0"] // 보석, 문자열 배열로 저장됩니다.
-global.player_gold = "" // 골드, 문자열로 저장됩니다.
+global.player_gold = "0" // 골드, 문자열로 저장됩니다.
+global.player_cash_display = 0 // 표기용
+global.player_gold_display = 0 // 표기용
 
 /*
 	플레이어가 소유한 모든 캐릭터입니다.

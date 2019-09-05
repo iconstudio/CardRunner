@@ -159,19 +159,19 @@
             }
         },
         {
-            "Key": "5dc9ffde-c97f-42a6-ad05-69344509bdcb",
-            "Value": {
-                "id": "b9b7cd87-c996-44a4-8325-8398dec1a15c",
-                "resourcePath": "scripts\\goods_cash_increase_one1\\goods_cash_increase_one1.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "65c65732-8f9b-4ef3-9fc3-37a50979a48f",
             "Value": {
                 "id": "bd761ef7-a0ba-489a-be09-7ccd41402ee3",
                 "resourcePath": "views\\65c65732-8f9b-4ef3-9fc3-37a50979a48f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6aa142e7-51ff-4a9e-848f-cf2a3c68dbca",
+            "Value": {
+                "id": "8b4f6e11-16b5-4a26-bc06-7561905aa14d",
+                "resourcePath": "scripts\\goods_cash_decode\\goods_cash_decode.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "6d902a5e-15bf-4fc4-9441-bbf9892ac5f4",
+            "Value": {
+                "id": "7e53699e-3462-4442-9e95-f29ba2c52bc7",
+                "resourcePath": "scripts\\goods_cash_encode\\goods_cash_encode.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "713a7d7c-5de6-4ea6-a6d7-199d45efca53",
             "Value": {
                 "id": "bd288307-7b62-41fc-a5b2-f684d4e126c1",
@@ -203,6 +211,22 @@
             "Value": {
                 "id": "f532007d-7183-42f2-86e5-ca460e088ad4",
                 "resourcePath": "scripts\\goods_cash_get_one\\goods_cash_get_one.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "835b9278-23ce-4f73-8129-0a5d6a44891d",
+            "Value": {
+                "id": "1f0cd81f-fc8b-4c2f-a02f-eb06aea4cec5",
+                "resourcePath": "scripts\\goods_cash_get\\goods_cash_get.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8398cc03-3478-4a26-a535-9e7ba6b8e6ae",
+            "Value": {
+                "id": "440adba7-55c8-44eb-9673-cd7e306b14a6",
+                "resourcePath": "scripts\\goods_cash_increase\\goods_cash_increase.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -449,13 +473,16 @@
     ],
     "script_order": [
         "6d508e59-70ba-4c8c-b235-cd39cacf9bb8",
+        "6d902a5e-15bf-4fc4-9441-bbf9892ac5f4",
+        "6aa142e7-51ff-4a9e-848f-cf2a3c68dbca",
         "dabc80b5-e4c9-46ed-a475-d606e8aa6fba",
         "35da3aa4-f03b-46e5-b0c2-cfa923f10b9b",
+        "835b9278-23ce-4f73-8129-0a5d6a44891d",
         "75e54151-07b0-4bde-8950-1238a2d2b736",
         "12e60558-d449-4fc8-a85f-a010e94e035a",
         "448aeae7-8b24-4e82-a936-554f79784841",
+        "8398cc03-3478-4a26-a535-9e7ba6b8e6ae",
         "0b5c754d-ee78-4744-8594-d1fce5ce92df",
-        "5dc9ffde-c97f-42a6-ad05-69344509bdcb",
         "c0cd9906-7d0f-41e7-8ea5-d25af177dbdc",
         "bffb10a7-e482-41bc-a118-b33ac9e7df4c",
         "cbcc741d-2445-43fb-9077-922eb1f0f630",

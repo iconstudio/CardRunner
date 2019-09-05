@@ -1,5 +1,5 @@
 {
-    "id": "35da3aa4-f03b-46e5-b0c2-cfa923f10b9b",
+    "id": "835b9278-23ce-4f73-8129-0a5d6a44891d",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "goods_cash_set1",

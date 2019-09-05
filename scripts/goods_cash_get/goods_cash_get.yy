@@ -1,8 +1,8 @@
 {
-    "id": "8398cc03-3478-4a26-a535-9e7ba6b8e6ae",
+    "id": "835b9278-23ce-4f73-8129-0a5d6a44891d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "goods_cash_increase_one1",
+    "name": "goods_cash_get",
     "IsCompatibility": false,
     "IsDnD": false
 }
