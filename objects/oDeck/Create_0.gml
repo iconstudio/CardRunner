@@ -2,3 +2,5 @@
 card_list = ds_list_create()
 
 card_number_max = 8
+
+enable = true

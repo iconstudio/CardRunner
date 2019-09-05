@@ -20,7 +20,7 @@ global.obfuscation_code = string_copy(string(irandom_range(1000000, 10000000)), 
 	필요가 있습니다.
 */
 global.player_money_purchased = 0 // 사용했던 현금, 숫자로 저장됩니다.
-global.player_cash = [] // 보석, 문자열 배열로 저장됩니다.
+global.player_cash = ["0"] // 보석, 문자열 배열로 저장됩니다.
 global.player_gold = "" // 골드, 문자열로 저장됩니다.
 
 /*
@@ -29,6 +29,16 @@ global.player_gold = "" // 골드, 문자열로 저장됩니다.
 
 	각 캐릭터 개체는 map을 이용하여 각종 속성을 저장합니다. 추후에 lightweight 
 	object로 변경될 예정입니다. 캐릭터가 추가될 때마다 이 map도 수정되야 합니다.
+
+	플레이어 구조 : /--------------------------------------------------------\
+									|	 번호	 | 0					 | 1					 | ... | 5					 |
+									+--------+-------------+-------------+-----+-------------+
+									|	  id	 | 00000000001 | 00000000002 | ... | 00000000005 |
+									+--------+-------------+-------------+-----+-------------+
+									|	 객체	 | oCharacterA | oCharacterB | ... | oCharacterC |
+									+--------+-------------+-------------+-----+-------------+
+									| 능력치 | [100, 1, ]  | [100, 0, ]	 | ... | [200, 10, ] |
+									'--------+-------------+-------------+-----+-------------'
 */
 global.player_character_list = ds_map_create()
 
@@ -63,9 +73,21 @@ global.player_card_list = ds_map_create()
 
 	각 덱은 persistent가 적용된 객체입니다. 각 덱 역시 들어있는 카드의 
 	목록을 들고 있습니다. 하지만 텅 빌 수도 있습니다.
+
+	덱 구조: /--------------------------------------------------------\
+					 |	 덱		| 0						| 1						| ... | 5						|
+					 +--------+-------------+-------------+-----+-------------+
+					 |	 id		| 00000000001 | 00000000002 | ... | 00000000005 |
+					 +--------+-------------+-------------+-----+-------------+
+					 |	이름	| Test Deck 1 | Test Deck 2 | ... | Test Deck 5 |
+					 +--------+-------------+-------------+-----+-------------+
+					 | (카드) | [a, b, ...] | [a, c, e]		| ... | [b, d, ...] |
+					 '--------+-------------+-------------+-----+-------------'
 */
-global.player_deck_list = ds_list_create()
+global.player_deck_number = 0
 global.player_deck_number_max = 5
+global.player_deck_list = ds_grid_create(global.player_deck_number_max, 2)
+ds_grid_clear(global.player_deck_list, noone)
 
 /*
 	게임 진행에 사용되는 덱입니다.
@@ -78,9 +100,15 @@ global.game_player_deck = noone
 */
 global.game_mode = GAME_MODE.none
 
-global.character_silhouette = character_register("character_silhouette", "실루엣", 100, SPEED.normal, [])
-
 /*
 	서버나 외부 파일로부터 그 내용을 불러옵니다.
 */
+character_register("character_silhouette", oCharacterSilhouette)
+
+global.game_player_deck = deck_add("Test Deck 1", "fireball")
+deck_add("Test Deck 2", "shield")
+deck_add("Test Deck 3", "fireball")
+deck_add("Test Deck 4", "fireball")
+deck_add("Test Deck 5", "fireball")
+
 
