@@ -1,14 +1,14 @@
 {
-    "id": "ab1e8c9e-af8e-4a99-a87c-eb592e28d43e",
+    "id": "9c1e2110-d49d-43ca-8329-684746c48ae7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oDummy",
+    "name": "oMainMenu",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "8da82c3d-9c0f-4677-8316-932f1faadbe7",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

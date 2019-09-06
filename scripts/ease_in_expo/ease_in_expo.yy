@@ -1,8 +1,8 @@
 {
-    "id": "970ab8b8-7176-4663-9980-75a1d133ffb3",
+    "id": "6e46b1ad-485e-4ce3-869c-41936e5b671b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "goods_cash_encode1",
+    "name": "ease_in_expo",
     "IsCompatibility": false,
     "IsDnD": false
 }

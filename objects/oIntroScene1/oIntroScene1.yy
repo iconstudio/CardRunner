@@ -1,10 +1,19 @@
 {
-    "id": "ab1e8c9e-af8e-4a99-a87c-eb592e28d43e",
+    "id": "d94a44c0-9e9a-4b94-af54-e008617f1292",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oDummy",
+    "name": "oIntroScene1",
     "eventList": [
-        
+        {
+            "id": "b00366e0-6e2b-457c-ac17-9690ac133fe8",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d94a44c0-9e9a-4b94-af54-e008617f1292"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

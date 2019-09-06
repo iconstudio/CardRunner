@@ -24,7 +24,7 @@ if cash_converted_dec < cash_current_dec { // 기존 배열에 더하기
 
 		cash_converted_result[i] = real(cash_converted_char)
 
-		if goods_cash_get_length() - 1 - i < 0 {
+		if goods_cash_get_length() - 1 - i <= 0 { // *debug
 			cash_converted_result[i] += goods_cash_get_one(current_i++)
 		}
 	}
