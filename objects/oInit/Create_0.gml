@@ -2,6 +2,11 @@
 randomize()
 
 /*
+	각종 소리, 그래픽, 해상도 설정을 합니다.
+*/
+event_user(1)
+
+/*
 	실행 중에 각종 수치를 암호화 하는데 사용됩니다.
 
 	매 실행 시마다 달라지므로 서버에 암호화된 값을 보낼 때는 사용할 수 
@@ -118,4 +123,7 @@ deck_add("Test Deck 3", "fireball")
 deck_add("Test Deck 4", "fireball")
 deck_add("Test Deck 5", "fireball")
 
-
+/*
+	다음 룸으로 넘어갑니다.
+*/
+alarm[0] = 1

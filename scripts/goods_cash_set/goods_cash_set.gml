@@ -1,7 +1,7 @@
 /// @description goods_cash_set(value)
 /// @function goods_cash_set
 /// @param value { integer }
-global.player_cash = []
+global.player_cash = 0
 
 var cash_converted = string(argument0)
 var cash_converted_length = string_length(cash_converted)

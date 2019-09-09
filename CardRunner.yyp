@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "18b78312-647d-4fb4-bc3a-e26799fb5384",
+            "Value": {
+                "id": "242db81f-8665-43cb-9aa8-8e1269101e28",
+                "resourcePath": "fonts\\fontIntro\\fontIntro.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "242da309-943a-4427-9ad7-287706bfac84",
             "Value": {
                 "id": "df2d44ce-d4e7-40d1-ae5d-7c36ad3c6f14",
@@ -135,6 +143,14 @@
             }
         },
         {
+            "Key": "3cce70d0-15eb-4099-bcc3-5bac120668f4",
+            "Value": {
+                "id": "739e962d-f2f3-47cf-952b-3dadffe2ce7b",
+                "resourcePath": "scripts\\ease_in_out_back\\ease_in_out_back.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "400f28dc-91af-4350-95d5-bf539e87d1be",
             "Value": {
                 "id": "83c2f37c-5dea-4a47-87e1-ff1849b80c79",
@@ -180,6 +196,14 @@
                 "id": "b68e237d-f3fd-4921-a37a-b89a1acce6b5",
                 "resourcePath": "views\\57b42a6d-eefe-4f69-9b32-05e40bf2fccd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5af8ac39-0058-4ed3-911b-7c1bab5f9177",
+            "Value": {
+                "id": "ad21a54f-f03e-4982-9001-9edafbcfa347",
+                "resourcePath": "objects\\oIntroScene02\\oIntroScene02.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -251,6 +275,14 @@
             "Value": {
                 "id": "e2e84b88-02e3-459a-b3d2-ad801c04b5dc",
                 "resourcePath": "scripts\\ease_in_expo\\ease_in_expo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6edd10f3-3089-4428-b1b9-e7e1cdbccd1c",
+            "Value": {
+                "id": "724c7f8d-c205-43d6-9698-7c43dc090bf6",
+                "resourcePath": "scripts\\ease_out_elastic\\ease_out_elastic.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -356,6 +388,14 @@
                 "id": "fd507b67-5b5f-415d-b511-0e87d1afa151",
                 "resourcePath": "views\\9dd57fdd-fa33-4728-821d-6387843164cb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a4c60548-e6ce-4a69-a06d-bac19c587919",
+            "Value": {
+                "id": "117310d1-b4a2-42fe-9c33-9fbf563f2d65",
+                "resourcePath": "scripts\\ease_out_quartic\\ease_out_quartic.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -487,6 +527,22 @@
             }
         },
         {
+            "Key": "d2721dad-4afb-48b1-8cd4-1635dc0075f0",
+            "Value": {
+                "id": "b6469879-2941-4085-9c0c-74399b51a46c",
+                "resourcePath": "scripts\\ease_in_out_elastic\\ease_in_out_elastic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d5de092b-e678-4982-bfde-259456a1cbf5",
+            "Value": {
+                "id": "b2672830-c555-4d54-869a-50ae23f3463d",
+                "resourcePath": "scripts\\ease_in_cubic\\ease_in_cubic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d79f8c83-da84-4d0d-a09b-b7e23ab1d612",
             "Value": {
                 "id": "5eb5fc7a-17a7-48cd-9cf6-da124c0c6260",
@@ -498,7 +554,7 @@
             "Key": "d94a44c0-9e9a-4b94-af54-e008617f1292",
             "Value": {
                 "id": "68363e42-dfb5-4339-b1bc-0ccdf8a0cd00",
-                "resourcePath": "objects\\oIntroScene1\\oIntroScene1.yy",
+                "resourcePath": "objects\\oIntroScene01\\oIntroScene01.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -591,6 +647,14 @@
             }
         },
         {
+            "Key": "fb8dc1af-7600-4642-b2f0-f15cfc6e2ed4",
+            "Value": {
+                "id": "758234a2-fd72-4f26-ab24-181a9abc5c06",
+                "resourcePath": "objects\\oIntroSceneLegacy\\oIntroSceneLegacy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fdf48354-bf2c-424f-8296-1a4fbad5fbf5",
             "Value": {
                 "id": "9c4f5654-99ff-45e6-80f0-af32e19fcb3b",
@@ -618,8 +682,13 @@
         "e337addc-3d40-46be-94d3-e46dbccb17d8",
         "51009df1-eb9a-4932-b169-4fbec184eb38",
         "e730d69a-aa30-4a03-9c1b-99643e2131aa",
+        "d5de092b-e678-4982-bfde-259456a1cbf5",
         "6e46b1ad-485e-4ce3-869c-41936e5b671b",
         "f0ae9c12-8cba-46a5-97e8-d8d13eaa4e67",
+        "a4c60548-e6ce-4a69-a06d-bac19c587919",
+        "6edd10f3-3089-4428-b1b9-e7e1cdbccd1c",
+        "3cce70d0-15eb-4099-bcc3-5bac120668f4",
+        "d2721dad-4afb-48b1-8cd4-1635dc0075f0",
         "6d508e59-70ba-4c8c-b235-cd39cacf9bb8",
         "32c581b8-ebcb-472d-83d7-fcf6eefc2412"
     ],
