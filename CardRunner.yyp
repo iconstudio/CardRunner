@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "30619e6b-7283-4c38-b5cb-a306dc618d63",
+            "Value": {
+                "id": "f0152a5e-ed05-47f4-a5ba-e4c9aee04d7f",
+                "resourcePath": "objects\\oIntroScene03\\oIntroScene03.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "31372a8c-cb46-4054-92c8-9c2b4e9c28ad",
             "Value": {
                 "id": "40c6c73e-e2fd-42b6-af2b-96dcf242aa43",

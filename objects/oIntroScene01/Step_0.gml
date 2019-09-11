@@ -15,11 +15,12 @@ if raise_time < raise_period {
 	// 대기
 
 	shown_time++
-} else if shrink_time < shrink_period {
-	image_xscale = script_execute(shrink_easer, 1 - shrink_time / shrink_period)
+} else if disappear_time < disappear_period {
+	disappear_time++
+	//image_xscale = script_execute(shrink_easer, 1 - shrink_time / shrink_period)
 
-	if shrink_period <= ++shrink_time
-		image_xscale = 0
+	//if shrink_period <= ++shrink_time
+	//	image_xscale = 0
 } else {
 	oIntro.scene_goto_next = true
 }
