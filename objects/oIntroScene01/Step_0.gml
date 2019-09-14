@@ -17,10 +17,8 @@ if raise_time < raise_period {
 	shown_time++
 } else if disappear_time < disappear_period {
 	disappear_time++
-	//image_xscale = script_execute(shrink_easer, 1 - shrink_time / shrink_period)
-
-	//if shrink_period <= ++shrink_time
-	//	image_xscale = 0
+} else if end_await_time < end_await_period {
+	end_await_time++
 } else {
 	oIntro.scene_goto_next = true
 }

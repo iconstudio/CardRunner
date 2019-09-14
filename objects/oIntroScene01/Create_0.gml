@@ -21,17 +21,22 @@ shown_time = 0
 shown_period = seconds(0.8)
 
 disappear_time = 0
-disappear_period = seconds(0.4)
+disappear_period = seconds(0.6)
 disappear_easer = ease_in_cubic
+end_await_time = 0
+end_await_period = seconds(0.4)
 
 boundary_width = room_width * 0.5 + 160
 boundary_height = room_height * 0.5 + 160
 caption_length = string_length(caption)
 caption_width = string_width(caption)
-capchar_coordinates = []
-capchar_target_coordinates = []
+//capchar_coordinates = []
+//capchar_target_coordinates = []
+capchar_information = []
+capchar_delay_max = seconds(0.1)
 
-var i, angle, capchar_size = 0, intersect_horizontal, intersect_vertical, intersect_tangent, intersect_x, intersect_y
+var capchar_size = 0
+var i, angle, intersect_horizontal, intersect_vertical, intersect_tangent, intersect_x, intersect_y
 for (i = 0; i < caption_length; ++i) {
 	angle = random(360)
 	intersect_horizontal = lengthdir_x(1, angle)
@@ -40,7 +45,7 @@ for (i = 0; i < caption_length; ++i) {
 	intersect_x = min(abs(-1 / intersect_tangent), 1) * sign(intersect_horizontal) * boundary_width
 	intersect_y = min(abs(intersect_tangent), 1) * sign(intersect_vertical) * boundary_height
 
-	capchar_coordinates[i] = [x - caption_width * 0.5 + capchar_size, y]
+	capchar_information[i] = [[x - caption_width * 0.5 + capchar_size, y], [x + intersect_x, y + intersect_y], random(capchar_delay_max)]
+
 	capchar_size += string_width(string_char_at(caption, i + 1))
-	capchar_target_coordinates[i] = [x + intersect_x, y + intersect_y]
 }
